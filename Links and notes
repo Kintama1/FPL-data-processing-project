@@ -1,0 +1,4 @@
+API for each individual team: https://fantasy.premierleague.com/api/entry/{team-id}/history/
+API for the classic leagues::  https://fantasy.premierleague.com/api/leagues-classic/{league-id}/standings/
+Some notes:
+- Entry is where ID for the API calls are
