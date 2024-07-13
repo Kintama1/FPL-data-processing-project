@@ -2,3 +2,4 @@ API for each individual team: https://fantasy.premierleague.com/api/entry/{team-
 API for the classic leagues::  https://fantasy.premierleague.com/api/leagues-classic/{league-id}/standings/
 Some notes:
 - Entry is where ID for the API calls are
+-List of APIs: https://www.game-change.co.uk/2023/02/10/a-complete-guide-to-the-fantasy-premier-league-fpl-api/
