@@ -3,8 +3,9 @@ import matplotlib.pyplot as plt
 import requests, json
 import os
 import numpy as np
-
+#I am reading the data that I saved from the .json
 data = pd.read_json("league_standings.json")
+#making a general df which is really not nessecary, should amend this                         
 general_df = pd.DataFrame(data)
 league_results = pd.DataFrame(general_df["standings"]["results"])
 
@@ -29,6 +30,7 @@ def buildTable():
     #initializing the df
     df = pd.DataFrame(np.nan, index = players , columns= columns)
     #you use zip to iterate over multiple elements in python
+    #NOTE: here I am looping through the players ID
     for entry, player in zip(league_results["entry"], players):
         #here I have event, points and total points
         player_hist = getPlayerData(entry)
@@ -139,6 +141,6 @@ def two_gws_bars(gw):
     plt.show()
 
 
-two_gws_bars(7)
+two_player_comp('Adi Pall-Pareek', 'Fotis Zafiriou')
 
 
